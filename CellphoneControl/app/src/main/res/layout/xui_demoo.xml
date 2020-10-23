@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xuexiang.xui.widget.picker.RulerView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+
+        app:rv_firstScale="175"
+        app:rv_minScale="50"
+        app:rv_maxScale="230"
+        app:rv_scaleCount="5"
+        app:rv_unit="cm"
+
+        app:rv_bgColor="#fcfffc"
+        app:rv_smallScaleColor="@color/colorPrimary"
+        app:rv_midScaleColor="@color/colorPrimaryDark"
+        app:rv_largeScaleColor="@color/colorAccent"
+        app:rv_resultNumColor="#50b586"
+        app:rv_scaleNumColor="#666666"
+        app:rv_unitColor="#50b586"
+        app:rv_unitTextSize="10sp" />
+
+    <Button
+        android:id="@+id/btn_test"
+        style="@style/Button.Blue"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="HELLO WORLD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
